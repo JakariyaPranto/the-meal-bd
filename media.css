@@ -5,3 +5,11 @@
     }
 
   }
+
+  @media screen and (max-width: 576px) {
+    
+    .foodDetails {
+        width: 50%
+    }
+
+  }
