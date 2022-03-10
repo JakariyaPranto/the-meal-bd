@@ -1,4 +1,10 @@
 
+document.getElementById('search-food').addEventListener('keypress', event => {
+    if(event.key === 'Enter') {
+        document.getElementById('search-btn').click()
+    }
+})
+
 function getFood() {
     const foodName = document.getElementById('search-food').value;
     let items = document.getElementById('items');
@@ -57,3 +63,4 @@ function foodDetails(strMeal, strMealThumb, strArea, idMeal, strCategory, strYou
 function closeModal() {
     document.getElementById('modal-Area').style.display = 'none'
 }
+
